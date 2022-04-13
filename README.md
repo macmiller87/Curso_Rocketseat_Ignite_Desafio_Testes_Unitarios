@@ -3,7 +3,7 @@
 - Nessa aplicação foi feita uma API, que simula a operação de um banco real, com todos os critérios e regras de negócio.
 
 ### Está em desenvolvimento ............. 🔥🔥🚀🚀
-## [Desafio 1 Modulo Chapter 4: Implementar Testes Unitários nas Rotas da Aplicação](https://www.notion.so/Desafio-01-Testes-unit-rios-0321db2af07e4b48a85a1e4e360fcd11)
+## [Desafio 1 Módulo Chapter 4: Implementar Testes Unitários nas Rotas da Aplicação](https://www.notion.so/Desafio-01-Testes-unit-rios-0321db2af07e4b48a85a1e4e360fcd11)
 #### Rota Create User:
 
 - [x] Should be able to create a new User.
