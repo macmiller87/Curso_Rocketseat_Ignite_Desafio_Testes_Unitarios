@@ -24,7 +24,7 @@ describe("Get Balance", () => {
     getBalanceUseCase = new GetBalanceUseCase(inMemoryStatementsRepository, inMemoryUsersRepository);
   });
 
-  it("Should be able to get the Blance", async () => {
+  it("Should be able to get the Balance", async () => {
 
     const user = await createUserUseCase.execute({
       name: "Macmiller",
