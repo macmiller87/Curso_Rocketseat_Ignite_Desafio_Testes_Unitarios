@@ -3,7 +3,6 @@ import { Connection } from "typeorm";
 import { app } from "../../../../app";
 import auth from "../../../../config/auth";
 import createConnection from "../../../../database/index";
-import { ShowUserProfileError } from "./ShowUserProfileError";
 
 let connection: Connection;
 
