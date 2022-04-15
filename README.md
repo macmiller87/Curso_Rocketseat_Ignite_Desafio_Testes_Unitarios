@@ -27,14 +27,28 @@
 - [x] Should not be able to do a withdraw with insufficient balance
 #### Rota GetBalance
 
-- [x] Should be able to get the Blance.
+- [x] Should be able to get the Balance.
 - [x] Should not able to get User balance, if User nonexistent.
 #### Rota GetStatementOperation
 
 - [x] Should be able to get a Statement Operation.
 - [x] Should not able to get a Statement Operation, if User nonexistent.
 - [x] Should not able to get a Statement Operation, if nonexistent Statement.
+### Inplementação dos Testes de Integração
+#### Rota Create User:
 
+- [x] Should be able to create a new user.
+- [x] should not be able to create a User if the Email is already in use.
+#### Rota Authenticate User:
+
+- [x] Should be able to Aunthenticate a User.
+- [x] Should not be able authenticate an unexistent User.
+- [x] Should not able authenticate an User with incorrect password.
+- [x] Should not able authenticate an User with incorrect email.
+#### Rota ShowUserProfile:
+
+- [x] Should able to show a User profile.
+- [x] Should not able to show an profile User, if user nonexists.
 #### Banco de dados
 
 - Se você quiser testar a aplicação usando o Insomnia para ver o funcionamento até mesmo como auxílio para criar os testes unitários, é importante que você confira os dados de autenticação do banco no arquivo `ormconfig.json` e, se necessário, altere.
