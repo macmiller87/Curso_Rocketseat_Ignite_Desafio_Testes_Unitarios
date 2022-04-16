@@ -2,7 +2,6 @@
 
 - Nessa aplicação foi feita uma API, que simula a operação de um banco real, com todos os critérios e regras de negócio.
 
-### Está em desenvolvimento ............. 🔥🔥🚀🚀
 ## [Desafio 1 Módulo Chapter 4: Implementar Testes Unitários nas Rotas da Aplicação](https://www.notion.so/Desafio-01-Testes-unit-rios-0321db2af07e4b48a85a1e4e360fcd11)
 ## [Desafio 2 Módulo Chapter 4: Implementar Testes de Integração nas Rotas da Aplicação](https://www.notion.so/Desafio-02-Testes-de-integra-o-70a8af48044d444cb1d2c1fa00056958)
 
@@ -111,4 +110,4 @@
 - Com o `Nodejs` e o `Yarn` instalados, Na sua IDE preferida, abra o terminal do `git`, e execute o seguinte comando => `yarn`, para baixar as dependências da aplicação.
 - Para rodar o projeto execute o seguinte comando => `yarn dev`.
 - Para testar o funcional da aplicação será necessário instalar o software `Insomnia` e criar as rotas da aplicação citadas acima.
-- Para rodar os testes unitarios das rotas da aplicação execute o seguinte comando => `yarn test`.
+- Para rodar os testes unitarios e integrados das rotas da aplicação execute o seguinte comando => `yarn test`.
