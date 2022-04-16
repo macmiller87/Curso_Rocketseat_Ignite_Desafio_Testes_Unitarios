@@ -4,6 +4,7 @@
 
 ### Está em desenvolvimento ............. 🔥🔥🚀🚀
 ## [Desafio 1 Módulo Chapter 4: Implementar Testes Unitários nas Rotas da Aplicação](https://www.notion.so/Desafio-01-Testes-unit-rios-0321db2af07e4b48a85a1e4e360fcd11)
+## [Desafio 2 Módulo Chapter 4: Implementar Testes de Integração nas Rotas da Aplicação](https://www.notion.so/Desafio-02-Testes-de-integra-o-70a8af48044d444cb1d2c1fa00056958)
 
 ### Inplementação dos Testes Unitários
 #### Rota Create User:
@@ -49,6 +50,21 @@
 
 - [x] Should able to show a User profile.
 - [x] Should not able to show an profile User, if user nonexists.
+#### Rota CreateStatement:
+
+- [x] Should be able to make a deposit in an user account.
+- [x] Should be able to withdraw credits from an user account.
+- [x] Should not be able to withdraw credits from an unexistent user and account.
+- [x] Should not be able to withdraw credits from an user account with insufficient balance.
+#### Rota GetBalance
+
+- [x] Should be able get the balance from an user account.
+- [x] Should not be able get the balance from an unexistent user account.
+#### Rota GetStatementOperation
+
+- [x] Should be able get an statement from an user account.
+- [x] Should not able to get a Statement Operation, if User nonexistent.
+- [x] Should not able to get a Statement Operation, if nonexistent Statement.
 #### Banco de dados
 
 - Se você quiser testar a aplicação usando o Insomnia para ver o funcionamento até mesmo como auxílio para criar os testes unitários, é importante que você confira os dados de autenticação do banco no arquivo `ormconfig.json` e, se necessário, altere.
