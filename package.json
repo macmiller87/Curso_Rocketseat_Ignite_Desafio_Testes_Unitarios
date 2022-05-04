@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "keywords": [],
+  "author": "Macmiller Duarte de Andrade",
   "scripts": {
     "dev": "ts-node-dev --poll --transpile-only --ignore-watch node_modules --respawn ./src/server.ts",
     "typeorm": "ts-node-dev ./node_modules/typeorm/cli",
