@@ -105,6 +105,10 @@
 #### GET `/api/v1/statements/:statement_id`
 
 - A rota recebe um token JWT pelo header e o id de uma operação registrada (saque ou depósito) na URL da rota e retorna as informações da operação encontrada.
+
+#### POST `/api/v1/statements/transfer/:recieve_userId`
+
+- A rota recebe um token JWT pelo header e `amount` e `description` no corpo da requisição e o `id` do usuário destinatário via parâmetro na rota, registra a operação de transferência do valor (caso o usuário possua saldo válido)
 ## Para rodar essa aplicação siga os seguintes passos:
 
 - Copie a url do repositório na aba `CODE`.
