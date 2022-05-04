@@ -35,7 +35,8 @@ describe("Get Balance", () => {
       user_id: user.id as string,
       description: "Deposit test",
       amount: 1000,
-      type: OperationType.DEPOSIT
+      type: OperationType.DEPOSIT,
+      receive_userId: ""
     });
 
     const userBalance = await getBalanceUseCase.execute({ user_id: userDeposit.user_id });

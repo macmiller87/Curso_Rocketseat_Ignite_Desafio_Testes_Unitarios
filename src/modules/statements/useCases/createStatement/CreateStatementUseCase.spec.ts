@@ -35,7 +35,8 @@ describe("Create Statement", () => {
       user_id: user.id as string,
       description: "Deposit test",
       amount: 2000,
-      type: OperationType.DEPOSIT
+      type: OperationType.DEPOSIT,
+      receive_userId: ""
     });
 
     expect(userDeposit).toHaveProperty("id");
@@ -60,14 +61,16 @@ describe("Create Statement", () => {
       user_id: user.id as string,
       description: "Deposit test",
       amount: 2000,
-      type: OperationType.DEPOSIT
+      type: OperationType.DEPOSIT,
+      receive_userId: ""
     });
 
     const userWithdraw = await createStatementUseCase.execute({
       user_id: user.id as string,
       description: "Withdraw test",
       amount: 1000,
-      type: OperationType.WITHDRAW
+      type: OperationType.WITHDRAW,
+      receive_userId: ""
     });
 
     expect(userWithdraw).toHaveProperty("id");
@@ -80,7 +83,8 @@ describe("Create Statement", () => {
         user_id: "User Fake",
         description: "Withdraw test",
         amount: 1000,
-        type: OperationType.WITHDRAW
+        type: OperationType.WITHDRAW,
+        receive_userId: ""
       });
     }).rejects.toBeInstanceOf(CreateStatementError.UserNotFound);
 
@@ -98,7 +102,8 @@ describe("Create Statement", () => {
       user_id: user.id as string,
       description: "Deposit test",
       amount: 1000,
-      type: OperationType.DEPOSIT
+      type: OperationType.DEPOSIT,
+      receive_userId: ""
     });
 
     await expect(async () => {
@@ -106,7 +111,8 @@ describe("Create Statement", () => {
         user_id: user.id as string,
         description: "Withdraw test",
         amount: 1001,
-        type: OperationType.WITHDRAW
+        type: OperationType.WITHDRAW,
+        receive_userId: ""
       });
     }).rejects.toBeInstanceOf(CreateStatementError.InsufficientFunds);
 

@@ -38,7 +38,8 @@ describe("Get Statement Operation", () => {
       user_id: user.id as string,
       description: "Deposit Test",
       amount: 800,
-      type: OperationType.DEPOSIT
+      type: OperationType.DEPOSIT,
+      receive_userId: ""
     });
 
     const getUserStatementOperation = await getStatementOperationUseCase.execute({
@@ -66,7 +67,8 @@ describe("Get Statement Operation", () => {
         user_id: user.id as string,
         description: "Deposit Test",
         amount: 100,
-        type: OperationType.DEPOSIT
+        type: OperationType.DEPOSIT,
+        receive_userId: ""
       });
 
       const getUserStatementOperation = await getStatementOperationUseCase.execute({
@@ -93,7 +95,8 @@ describe("Get Statement Operation", () => {
         user_id: user.id as string,
         description: "Deposit Test",
         amount: 600,
-        type: OperationType.DEPOSIT
+        type: OperationType.DEPOSIT,
+        receive_userId: ""
       });
 
       const getUserStatementOperation = await getStatementOperationUseCase.execute({
