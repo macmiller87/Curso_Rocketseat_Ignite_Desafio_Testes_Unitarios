@@ -15,7 +15,7 @@ export class CreateStatementUseCase {
     private statementsRepository: IStatementsRepository
   ) {}
 
-  async execute({ user_id, type, amount, description }: ICreateStatementDTO) {
+  async execute({ user_id, type, amount, description, receive_userId }: ICreateStatementDTO) {
     const user = await this.usersRepository.findById(user_id);
 
     if(!user) {
@@ -34,7 +34,8 @@ export class CreateStatementUseCase {
       user_id,
       type,
       amount,
-      description
+      description,
+      receive_userId
     });
 
     return statementOperation;
